@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Employee Lookup & Purchase Validator | UiPath Automation</title>
+  <meta name="description" content="Smart AI Employee Lookup Agent built with UiPath. Automate purchase eligibility validation based on employee profiles and policy with real-time AI, chat interface, and secure RBAC." />
+  <meta name="keywords" content="UiPath automation, Employee Lookup Agent, AI purchase validator, UiPath AI Agent, Employee Lookup Automation, Intelligent Purchase Eligibility" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Smart AI Employee Lookup & Purchase Validator" />
+  <meta property="og:description" content="Automate eligibility checks with AI and UiPath-powered workflows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="/assets/og-image.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Smart AI Employee Lookup & Purchase Validator" />
+  <meta name="twitter:description" content="Automate eligibility checks with AI and UiPath-powered workflows." />
+  <meta name="twitter:image" content="/assets/og-image.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%2300FFFF'/%3E%3Ctext x='50' y='58' font-size='50' text-anchor='middle' fill='black'%3EAI%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "AI Employee Lookup & Purchase Validator",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "description": "UiPath-powered AI agent that automates purchase eligibility validation based on employee profiles and company policy.",
+    "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+  <header class="site-header" role="banner">
+    <nav class="nav">
+      <a href="#" class="logo" aria-label="Orchids AI Home">
+        <span class="logo-mark">◉</span>
+        <span class="logo-text">Orchids.ai</span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class='bx bx-menu'></i>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#contact" class="btn btn-accent">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1>Smart AI Employee Lookup & Purchase Validator</h1>
+        <p class="sub">Automate eligibility checks with AI and UiPath-powered workflows to streamline procurement decisions and enhance employee experience.</p>
+        <div class="cta-group">
+          <a href="#demo" class="btn btn-primary">Try Demo</a>
+          <a href="#how" class="btn btn-secondary">Learn More</a>
+        </div>
+        <div class="hero-badges" aria-label="Highlights">
+          <span><i class='bx bx-brain'></i> AI + UiPath</span>
+          <span><i class='bx bx-lock-alt'></i> Secure RBAC</span>
+          <span><i class='bx bx-bolt-circle'></i> Real-time</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="ai-face"></div>
+        <div class="data-stream"></div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how" class="section how">
+      <header class="section-header">
+        <h2>How It Works</h2>
+        <p>From employee email to eligibility in seconds.</p>
+      </header>
+      <div class="workflow">
+        <div class="step">
+          <div class="icon"><i class='bx bx-envelope'></i></div>
+          <h3>Enter Employee Email</h3>
+          <p>Start with a corporate email or ID.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="step">
+          <div class="icon"><i class='bx bx-search-alt-2'></i></div>
+          <h3>AI-powered Profile Lookup</h3>
+          <p>Enrich from Excel and HR data.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="step">
+          <div class="icon"><i class='bx bx-file-find'></i></div>
+          <h3>Policy Validation</h3>
+          <p>Parse PDFs to extract rules.</p>
+        </div>
+        <div class="arrow">→</div>
+        <div class="step">
+          <div class="icon"><i class='bx bx-check-shield'></i></div>
+          <h3>Instant Results</h3>
+          <p>Limits, approved items, rationale.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section features">
+      <header class="section-header">
+        <h2>Features</h2>
+      </header>
+      <div class="feature-grid">
+        <article class="feature">
+          <i class='bx bx-file'></i>
+          <h3>Real-time AI Document Understanding</h3>
+          <p>Automatically extracts purchase policies from PDFs.</p>
+        </article>
+        <article class="feature">
+          <i class='bx bx-table'></i>
+          <h3>Seamless Data Integration</h3>
+          <p>Connects with Excel and enterprise HR databases effortlessly.</p>
+        </article>
+        <article class="feature">
+          <i class='bx bx-message-square-dots'></i>
+          <h3>Natural Language Support</h3>
+          <p>Chat and voice-enabled queries for intuitive interaction.</p>
+        </article>
+        <article class="feature">
+          <i class='bx bx-mail-send'></i>
+          <h3>Automated Reports</h3>
+          <p>Generates and emails eligibility reports instantly.</p>
+        </article>
+        <article class="feature">
+          <i class='bx bx-shield-quarter'></i>
+          <h3>Secure Role-Based Access</h3>
+          <p>Ensures data privacy and compliance.</p>
+        </article>
+        <article class="feature">
+          <i class='bx bx-devices'></i>
+          <h3>Mobile-Ready</h3>
+          <p>Responsive design plus optional MS Teams/Slack integration.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="section benefits">
+      <header class="section-header">
+        <h2>Benefits</h2>
+      </header>
+      <ul class="benefits-list">
+        <li>Save hours of manual validation work.</li>
+        <li>Eliminate human errors in eligibility checks.</li>
+        <li>Ensure compliance with company policies.</li>
+        <li>Empower procurement and HR with smart insights.</li>
+      </ul>
+    </section>
+
+    <!-- Technology -->
+    <section id="technology" class="section technology">
+      <header class="section-header">
+        <h2>About the Technology</h2>
+      </header>
+      <div class="tech-content">
+        <p>Built on UiPath Studio and AI Builder, leveraging advanced machine learning models for document processing and workflow automation. Enjoy secure, scalable deployment with integration-ready architecture supporting enterprise environments.</p>
+        <ul class="tech-list">
+          <li>UiPath Studio and AI Builder integration</li>
+          <li>Document Understanding and ML models in action</li>
+          <li>Secure cloud deployment and analytics dashboards</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Demo / Interactive -->
+    <section id="demo" class="section demo">
+      <header class="section-header">
+        <h2>Try the Demo</h2>
+        <p>Simulate an eligibility check using sample data.</p>
+      </header>
+      <form id="demo-form" class="demo-form" aria-label="Eligibility Demo">
+        <label>
+          <span>Email</span>
+          <input type="email" id="demo-email" placeholder="employee@company.com" required />
+        </label>
+        <label>
+          <span>Role</span>
+          <select id="demo-role">
+            <option>Associate</option>
+            <option>Manager</option>
+            <option>Director</option>
+          </select>
+        </label>
+        <label>
+          <span>Policy Version</span>
+          <select id="demo-policy">
+            <option value="2024-01-01">v2024.1 (effective 2024-01-01)</option>
+            <option value="2024-07-01">v2024.2 (effective 2024-07-01)</option>
+          </select>
+        </label>
+        <button type="submit" class="btn btn-primary">Check Eligibility</button>
+      </form>
+      <div class="demo-results" aria-live="polite" id="demo-results"></div>
+      <div class="demo-stats">
+        <canvas id="chart" width="400" height="220" role="img" aria-label="Eligibility trends"></canvas>
+        <div class="sync">
+          <span class="sync-status"><i class='bx bx-sync bx-spin'></i> Last sync: <span id="last-sync">—</span></span>
+          <button id="sync-btn" class="btn btn-secondary">Sync Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section id="contact" class="section contact">
+      <header class="section-header">
+        <h2>Get Started</h2>
+        <p>Start your free trial or request a personalized demo.</p>
+      </header>
+      <form id="contact-form" class="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" id="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" id="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea id="message" rows="4" placeholder="Tell us your use case..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Get Started</button>
+          <button class="btn btn-secondary" type="button" id="contact-demo">Contact Us</button>
+        </div>
+      </form>
+      <p class="privacy">We respect your privacy. Your data will never be shared.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-links">
+      <a href="#" aria-label="Documentation">Documentation</a>
+      <a href="#" aria-label="GitHub">GitHub</a>
+      <a href="#" aria-label="Support">Support</a>
+    </div>
+    <p>© <span id="year"></span> Orchids.ai — Built with UiPath + AI</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" integrity="sha384-9d+LnIyrg+/sG1f1N5k9k4Qoa8K0oi9p7JbHqPpYQm+zZkqkM8wOHkZckK8Wv3fj" crossorigin="anonymous"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>
